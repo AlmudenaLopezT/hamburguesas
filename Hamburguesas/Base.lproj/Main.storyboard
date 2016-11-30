@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wik-TV-uip">
+                                <rect key="frame" x="49" y="67" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Nombre Hamburguesa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5c-PW-x8c">
+                                <rect key="frame" x="49" y="131" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1X-6W-oa9">
+                                <rect key="frame" x="72" y="232" width="270" height="198"/>
+                                <state key="normal" title="¡Quiero una Hamburguesa!"/>
+                                <connections>
+                                    <action selector="actionBoton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arX-wh-dEI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo7-5j-lg1">
+                                <rect key="frame" x="53" y="160" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeA-7j-JsT">
+                                <rect key="frame" x="207" y="67" width="0.0" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wik-TV-uip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="B8a-Rw-9UW"/>
+                            <constraint firstItem="J5c-PW-x8c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="Dcg-MZ-Jh8"/>
+                            <constraint firstItem="QeA-7j-JsT" firstAttribute="leading" secondItem="wik-TV-uip" secondAttribute="trailing" constant="8" id="G0O-gU-r5b"/>
+                            <constraint firstItem="Yo7-5j-lg1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="HcN-lx-Gqa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F1X-6W-oa9" secondAttribute="trailing" constant="52" id="MzB-bX-CkD"/>
+                            <constraint firstItem="QeA-7j-JsT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="47" id="Pbq-gM-ePx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F1X-6W-oa9" secondAttribute="bottom" constant="306" id="VrY-p4-SUz"/>
+                            <constraint firstItem="J5c-PW-x8c" firstAttribute="top" secondItem="QeA-7j-JsT" secondAttribute="bottom" constant="43" id="Zas-XC-6dl"/>
+                            <constraint firstItem="J5c-PW-x8c" firstAttribute="top" secondItem="QeA-7j-JsT" secondAttribute="bottom" constant="43" id="anH-z4-PaZ"/>
+                            <constraint firstItem="F1X-6W-oa9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="eXV-fT-BBU"/>
+                            <constraint firstItem="F1X-6W-oa9" firstAttribute="top" secondItem="Yo7-5j-lg1" secondAttribute="bottom" constant="51" id="go2-t4-KNh"/>
+                            <constraint firstItem="F1X-6W-oa9" firstAttribute="top" secondItem="J5c-PW-x8c" secondAttribute="bottom" constant="80" id="h5t-fA-NPy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yo7-5j-lg1" secondAttribute="trailing" constant="18" id="iK9-1d-rfk"/>
+                            <constraint firstItem="J5c-PW-x8c" firstAttribute="top" secondItem="wik-TV-uip" secondAttribute="bottom" constant="43" id="mc5-DU-dNd"/>
+                            <constraint firstItem="wik-TV-uip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="ngz-w3-ERU"/>
+                            <constraint firstItem="F1X-6W-oa9" firstAttribute="top" secondItem="Yo7-5j-lg1" secondAttribute="bottom" constant="51" id="s4M-b1-jbH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QeA-7j-JsT" secondAttribute="trailing" constant="187" id="sTM-rP-RU3"/>
+                            <constraint firstItem="Yo7-5j-lg1" firstAttribute="leading" secondItem="J5c-PW-x8c" secondAttribute="trailing" constant="-174" id="w54-k9-2c3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburguesa" destination="Yo7-5j-lg1" id="9sX-Eh-eeP"/>
+                        <outlet property="pais" destination="QeA-7j-JsT" id="RVl-zd-2bJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
